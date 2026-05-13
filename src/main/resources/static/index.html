@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button id="location-btn" class="location-btn" title="Use My Location">
+                <i class="fa-solid fa-crosshairs"></i> Use My Location
+            </button>
+        </div>
+
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>Fetching weather...</p>
+        </div>
+
+        <div id="error-message" class="error-message hidden">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p id="error-text">City not found. Please try again.</p>
+        </div>
+
+        <div id="weather-card" class="weather-card hidden">
+            <div class="location-header">
+                <h2 id="location-name">City, Country</h2>
+                <p id="current-date">Day, Date Time</p>
+            </div>
+            
+            <div class="weather-main">
+                <div class="temp-container">
+                    <h1 id="temperature">--</h1>
+                    <span class="unit">°C</span>
+                </div>
+                <div class="condition-container">
+                    <i id="weather-icon" class="fa-solid fa-cloud"></i>
+                    <h3 id="weather-condition">Condition</h3>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <i class="fa-solid fa-temperature-arrow-down"></i>
+                    <div>
+                        <p>Min</p>
+                        <h4 id="min-temp">--°C</h4>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-temperature-arrow-up"></i>
+                    <div>
+                        <p>Max</p>
+                        <h4 id="max-temp">--°C</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
