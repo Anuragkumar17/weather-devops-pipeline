@@ -39,26 +39,6 @@ The project demonstrates a complete DevOps workflow, including build automation,
 
 ---
 
-## Project Structure
-
-weatherapp/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/weatherapp/
-│   │   │   ├── WeatherappApplication.java
-│   │   │   └── controller/WeatherController.java
-│   │   └── resources/
-│   │       ├── static/
-│   │       │   ├── index.html
-│   │       │   ├── style.css
-│   │       │   └── script.js
-├── target/
-├── Dockerfile
-├── pom.xml
-└── .github/workflows/main.yml
-
----
-
 ## How It Works
 
 1. The frontend sends a request to the backend endpoint:
@@ -83,7 +63,7 @@ weatherapp/
 ### Steps
 
 1. Clone the repository:
-   git clone https://github.com/your-username/weather-devops-pipeline.git
+   git clone https://github.com/Anuragkumar17/weather-devops-pipeline.git
 
 2. Navigate to the project directory:
    cd weatherapp
